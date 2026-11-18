@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "voicebox-server",
+  "main": "src/index.js",
+  "compatibility_date": "2025-10-01",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "voicebox-sync",
+      "database_id": "5e071da4-aa2c-4c48-8aab-3017c5e93e8e"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "FILES",
+      "id": "6a897ddeb1c64b4caf1998780067890f"
+    }
+  ]
+}
